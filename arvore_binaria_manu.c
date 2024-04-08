@@ -103,6 +103,7 @@ TArvore* remover(TArvore * raiz, int key){
     return raiz;
 }
 
+
         
 int main(int argc, char** argv) {
 
@@ -113,44 +114,12 @@ int main(int argc, char** argv) {
     preencherArvore(raiz);
     ordem(raiz);
 
-    printf("Qual voce quer remover? ");
+   printf("Qual voce quer remover? ");
     int key;
     scanf("%d", &key);
+
     remover(raiz, key);
     ordem(raiz);
-
-/*
-    TArvore * no = malloc(sizeof(TArvore));
-    no->info = 2;
-    raiz->esq = no;
-    no = malloc(sizeof(TArvore));
-    no->info = 10;
-    raiz->dir = no;
-
-    no = malloc(sizeof(TArvore));
-    no->info = 3;
-    raiz->esq->dir = no;
-
-    no = malloc(sizeof(TArvore));
-    no->info = 6;
-    raiz->dir->esq = no;
-
-    no = malloc(sizeof(TArvore));
-    no->info = 4;
-    raiz->esq->dir->dir = no;
-
-    no = malloc(sizeof(TArvore));
-    no->info = 8;
-    raiz->dir->esq->dir = no;
-
-    no = malloc(sizeof(TArvore));
-    no->info = 9;
-    raiz->dir->esq->dir->dir = no;
-*/
-
-
-
-;
 
     return (EXIT_SUCCESS);
 }
